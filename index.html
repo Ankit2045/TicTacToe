@@ -6,22 +6,39 @@
     <title>TicTacToe_Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
+<body class="dark light">
+    <nav class="navbar">
+        <div class="Tic"><u>!..Tic Tac Toe..!</u></div>
+        <div class="navigation">
+            <button class="darkmode">Dark Mode</button>
+            <button class="lightmode">Light Mode</button>
+            <button id="reset" class="hide">Reset Button</button>
         </div>
+    </nav>
+    <!--will come after playing game-->
+    <div class="message-container hide">
+        <p class="message-text">Congrats</p>
+        <button id="NewBtn" class="colorchange">New Game</button>
     </div>
-    <button id="reset">Reset Button</button>
+    <button id="playGame" class="colorchange">Play Game</button>
+
+    <main class="hide">
+        <h1></h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        
+    </main>
 <script src="script.js"></script>  
 </body>
 </html>
